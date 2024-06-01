@@ -1,7 +1,7 @@
 The Vibrolite program is an attempt at automated vibration spectrum diagnostics. 
 With a certain degree of probability, the program identifies defects such as: 
 disbalance, misalignment, and rolling bearing defects 
-(if bearing characteristics are present in the file 'bear.txt'). 
+(if bearing characteristics are present in the file 'bearing.txt'). 
 Vibrolite is a test program and should be verified when analyzing 
 real spectrum data exported to a file containing two columns, 
 the first with frequencies, the second with values at these frequencies. 
@@ -17,10 +17,10 @@ to display the spectrum in the gnuplot program.
 You can connect a file for analysis using: ./vib -f or ./vib -fp 
 to display the spectrum in the gnuplot program.
 
-The program uses the file 'bear.txt', which contains the characteristics 
+The program uses the file 'bearing.txt', which contains the characteristics 
 of rolling bearings necessary for calculating possible rolling bearing defects. 
 The file contains a few number of bearings, if necessary, 
-you can add the necessary bearings and their characteristics to file 'bear.txt'.
+you can add the necessary bearings and their characteristics to file 'bearing.txt'.
 
 Example_1 of starting the program with spectrum generation: ./vib -i
 25 1000 2000 /* type parameters */

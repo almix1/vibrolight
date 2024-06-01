@@ -39,7 +39,7 @@ void diagnostics_bear(int f_r, double *x_spectr, double *y_spectr, char *numbear
     int Din, Dout, Nrol;
     int f_cage, f_out, f_in;
     double Drol;
-    FILE *f = fopen("bear.txt", "r");
+    FILE *f = fopen("bearing.txt", "r");
     if (f == NULL) {
         printf("Can't open file for reading.\n");
         exit(1);
@@ -60,8 +60,8 @@ void diagnostics_bear(int f_r, double *x_spectr, double *y_spectr, char *numbear
 		}
 	}
 	if (s==0) 
-	    printf("Type bear '%s' with correct data in file 'bear.txt'\n", numbear);
+	    printf("Type bear '%s' with correct data in file 'bearing.txt'\n", numbear);
 	if (b>1)
-	    printf("Found %d copeis of bear '%s'. Choose one copy and delete rest in file 'bear.txt'", b, numbear); 
+	    printf("Found %d copeis of bear '%s'. Choose one copy and delete rest in file 'bearing.txt'", b, numbear); 
 	fclose(f);
 }

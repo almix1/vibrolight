@@ -39,7 +39,7 @@ void init_y_spectr_bear(int f_r, double *y_spectr, char *numbear)
     int f_s, f_out, f_in;
     int b=0;
     int s=0;
-    f = fopen("bear.txt", "r");
+    f = fopen("bearing.txt", "r");
     if (f == NULL) {
         printf("Can't open file for reading.\n");
         exit(1);

@@ -54,7 +54,7 @@ void init_y_spectr_bear(int f_r, double *y_spectr, char *numbear)
       y_spectr[f_s] = 0 + ((double)rand()/(double)(RAND_MAX) * (MAXVIB - 0));
       y_spectr[f_out] = 0 + ((double)rand()/(double)(RAND_MAX) * (MAXVIB - 0));
       y_spectr[f_in] = 0 + ((double)rand()/(double)(RAND_MAX) * (MAXVIB - 0));
-	}
+    }
   }
   fclose(f);
 }

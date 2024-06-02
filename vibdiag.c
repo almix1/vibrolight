@@ -51,25 +51,25 @@ void diagnostics_bear(int f_r, double *x_spectr, double *y_spectr, char *numbear
     if (strncmp(nbear, numbear, 32)==0 && (Din>0 && Dout>0 && Nrol>0 && Drol>0)) {
       b++;
       s++;
-	  f_cage = 0.4 * f_r;		
-	  if(y_spectr[f_cage] > 0.3 * MAXVIB) {
-	    printf("defect bearing: '%.2f - FTF %.2f Hz'\n", y_spectr [f_cage], x_spectr[f_cage]);
+      f_cage = 0.4 * f_r;		
+      if(y_spectr[f_cage] > 0.3 * MAXVIB) {
+        printf("defect bearing: '%.2f - FTF %.2f Hz'\n", y_spectr [f_cage], x_spectr[f_cage]);
       }
-	  f_out = 0.4*Nrol*f_r;
-	  if(y_spectr[f_out] > 0.3 * MAXVIB) {
-	    printf("defect bearing: '%.2f - BPFO %.2f Hz'\n", y_spectr [f_out], x_spectr[f_out]);
+      f_out = 0.4*Nrol*f_r;
+      if(y_spectr[f_out] > 0.3 * MAXVIB) {
+        printf("defect bearing: '%.2f - BPFO %.2f Hz'\n", y_spectr [f_out], x_spectr[f_out]);
       }
-	  f_in = 0.6*Nrol*f_r;
-	  if(y_spectr[f_in] > 0.3 * MAXVIB) {
-	    printf("defect bearing: '%.2f - BPFI %.2f Hz'\n", y_spectr [f_in], x_spectr[f_in]);
-	  }
-	}
+      f_in = 0.6*Nrol*f_r;
+      if(y_spectr[f_in] > 0.3 * MAXVIB) {
+        printf("defect bearing: '%.2f - BPFI %.2f Hz'\n", y_spectr [f_in], x_spectr[f_in]);
+      }
+    }
   }
   if (s==0) {
     printf("Type bear '%s' with correct data in file 'bearing.txt'\n", numbear);
   }
   if (b>1) {
-	printf("Found %d copeis of bear '%s'. Choose one copy and delete rest in file 'bearing.txt'", b, numbear); 
+    printf("Found %d copeis of bear '%s'. Choose one copy and delete rest in file 'bearing.txt'", b, numbear); 
   }
   fclose(f);
 }

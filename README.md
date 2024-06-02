@@ -12,10 +12,10 @@ spectrum width, and the number of lines in the spectrum.
 The accuracy of the analysis will depend on how closely the entered 
 data matches that in the connected file. As an example, 
 the program can generate a file with data for diagnostics and conduct a diagnostics itself.
-To do this, you need to run it with the -i parameter: ./vib -i or ./vib -ip 
-to display the spectrum in the gnuplot program. 
-You can connect a file for analysis using: ./vib -f or ./vib -fp 
-to display the spectrum in the gnuplot program.
+To do this, you need to run it with the -i parameter:
+./vib -i or ./vib -ip to display the spectrum in the gnuplot program. 
+You can connect a file for analysis using:
+./vib -f or ./vib -fp to display the spectrum in the gnuplot program.
 
 The program uses the file 'bearing.txt', which contains the characteristics 
 of rolling bearings necessary for calculating possible rolling bearing defects. 

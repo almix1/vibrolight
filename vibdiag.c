@@ -9,7 +9,7 @@ void skz(double line_in_spectr, double *y_spectr)
 {
   double sk_z = 0;
   for (int i = 0; i <= line_in_spectr; i++) {
-  sk_z += y_spectr[i]*y_spectr[i];
+    sk_z += y_spectr[i]*y_spectr[i];
   }
   sk_z = sqrt(sk_z);
   printf("RMS: %.2f\n", sk_z);
@@ -30,7 +30,7 @@ void diagnostics(int f_r, double *x_spectr, double *y_spectr)
       y_spectr[f_r], x_spectr[f_r], y_spectr[2*f_r], x_spectr[2*f_r]);
   }
   if(twodivone >= 1 && twodivone < 2 && y_spectr[2*f_r] > 0.3 * MAXVIB) {
-	printf("warning: clearances: '%.2f - %.2f Hz', '%.2f - %.2f Hz'\n", 
+    printf("warning: clearances: '%.2f - %.2f Hz', '%.2f - %.2f Hz'\n", 
       y_spectr[f_r], x_spectr[f_r], y_spectr[2*f_r], x_spectr[2*f_r]);
   }
 }

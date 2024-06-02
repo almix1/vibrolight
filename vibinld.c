@@ -77,13 +77,13 @@ void load_spectr(double line_in_spectr, double *x_spectr, double *y_spectr, char
   double n, m;
   FILE *f = fopen(filename, "r");
   if (f == NULL) {
-   	printf("Can't open file for reading.\n");
-   	exit(1);
+    printf("Can't open file for reading.\n");
+    exit(1);
   }
   for (int i = 0; i <= line_in_spectr; i++) {
-	fscanf(f, "%lf %lf", &n, &m);
-	x_spectr[i] = n;
-	y_spectr[i] = m;
+    fscanf(f, "%lf %lf", &n, &m);
+    x_spectr[i] = n;
+    y_spectr[i] = m;
   }
   fclose(f);
 }
@@ -94,7 +94,7 @@ void plot (double line_in_spectr, double *x_spectr, double *y_spectr)
   fprintf(gnuplot, "set title 'spectr'\n");
   fprintf(gnuplot, "plot '-' with lines\n");
   for (int i = 0; i <= line_in_spectr; i++) {
-	fprintf(gnuplot, "%.2f %.2f\n", x_spectr[i], y_spectr[i]);
+    fprintf(gnuplot, "%.2f %.2f\n", x_spectr[i], y_spectr[i]);
   }
   fprintf(gnuplot, "e\n");
   pclose(gnuplot);

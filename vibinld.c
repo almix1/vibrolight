@@ -15,7 +15,7 @@ void init_x_spectr(double width_spectr, double line_in_spectr, double *x_spectr)
   int i;
   double j;
   for (i=0, j=0; i <= line_in_spectr; i++, j=j+(width_spectr/line_in_spectr)) {
-	x_spectr[i] = j;
+    x_spectr[i] = j;
   }
 }
 
